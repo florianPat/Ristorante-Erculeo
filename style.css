@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: gold;
+  background-image: url("BG.jpeg");
+  background-repeat: repeat-y;
+  background-size: 150%;
+}
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 101;
+}
+nav ul {
+  text-align: center;
+  list-style: none;
+  background-color: red;
+  padding: 0;
+  margin: 0;
+}
+nav li {
+  display: inline-block;
+  margin: .5em;
+}
+nav a {
+  text-decoration: none;
+  color: gold;
+  padding: .5em;
+  background-color: darkred;
+  transition: all ease-in 0.1s;
+}
+.active {
+  background-color: green;
+}
+nav a:focus,
+nav a:hover,
+nav li[aria-current] a:focus,
+nav li[aria-current] a:hover {    
+  color: darkblue; 
+  background-color: gold;
+}
+@keyframes flyInLeftToRight {
+  from {left: -100%; opacity: 0;}
+  to {left: 0%; opacity: 1;}
+}
+@keyframes flyInRightToLeft {
+  from {left: 100%; opacity: 0;}
+  to {left: 0%; opacity: 1;}
+}
+.PictureAndDescription {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  animation-duration: 2s;
+}
+.PictureAndDescription p {
+  font-family: arial;
+  font-size: 50px;
+  color: white;
+  padding: 20px;
+}
+footer {
+  background-color: yellow;
+}
+#FooterAllignment {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2em;
+}
+#FooterAllignment tr,td {
+  padding: 0em 1em;
+  border-radius: 0.1em;
+  border: 1px solid;
+}
+#OZT {
+  background-color: gray;
+}
+em {
+  color: lightgray;
+}
+form {
+  padding: 2em 10em;
+  background-color: gray;
+}
+.PinkBackgroundColor {
+  background-color: pink;
+}
